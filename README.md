@@ -6,7 +6,9 @@ Para iniciar o projeto com sucesso siga os seguintes passos :
         a - yarn install
 4 - Entre na pagina do projeto digitando no temrinal: cd chucknorris
 5 - Instale apisaurce com o comando: "yarn add apisauce"
-6 - Instalar Bootstrap 
+6 - Instalar o router dom  com o comando: "yarn add react-router-dom"
+ - Instalar Bootstrap 
+
 6 - Start o projeto com o comando: "yarn start"
 
 # Getting Started with Create React App

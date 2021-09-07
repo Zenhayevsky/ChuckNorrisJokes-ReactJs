@@ -1,0 +1,22 @@
+.head {
+    background-color: orange;
+}
+
+.aprovedPic {
+    border: 10px,solid,orange;
+    border-radius: 2000px;
+    width: 150px;
+    position:absolute;
+    margin-top: 380px;
+    margin-left: 1130px;
+}
+
+.header {
+    height: 90px;
+    width: 900px;
+    position: relative;
+    margin-left: 230px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
