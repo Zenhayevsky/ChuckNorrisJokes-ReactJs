@@ -1,0 +1,94 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+#inicioPiada .balao1 {
+  height: 250px;
+}
+
+#finalPiada .balao2 {
+  height: 250px;
+}
+
+#inicioPiada {
+  position: absolute;
+  align-self: left;
+  margin-top: -350px;
+  margin-left: -600px;
+}
+
+#finalPiada {
+  position: absolute;
+  align-self: right;
+  margin-top: -70px;
+  margin-right: -400px;
+  animation: fade-in 2s normal forwards ease-in-out;
+  
+}
+.capa {
+  align-items: right;
+  width: 500px;
+  height: 400px;
+  display: flex;
+  
+}
+
+.seatreve {
+  height: 200px;
+  width: 200px;
+  margin-left: 350px;
+  margin-top: 0px;
+  position:absolute;
+  animation: fade-in 2s normal forwards ease-in-out;
+
+}
+.App-header {
+  background-image: url(./Imagens/fundotelaranja.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+p {
+  font-weight: bolder;
+  color: black;
+
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes fade-in {
+  from { opacity: 0 }
+  to   { opacity: 1 }
+}
