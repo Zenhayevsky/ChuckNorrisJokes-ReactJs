@@ -4,37 +4,37 @@ import axios from 'axios';
 
 const CriandoPiada = () => {
 
-    function refreshPage(){ 
-        window.location.reload(); 
+    function onChange(ev) {
+        const { name, value } = ev.target;
+
+        setValor({ ...valor, [name]: value });
+        console.log(valor)
     }
     
     const piadaBase = {
         "type": " ", 
         "value": [{ "id": 0, "joke": " " }]
-       }
+       };
 
-    const dados = "maria";
+    const val = " ";
+
+    
     const [jdPiada, setJdPiada] = useState(piadaBase);
+    const [piada, setPiada] = useState(val);
+    const [valor, setValor] = useState(val);
 
-    function onChange(ev) {
-        const { name, value } = ev.target;
 
-        console.log({name, value})
-
-    }
-
-    function Bora() {
+    function Bora(a) {
 
         useEffect(() => {
-            axios.get('http://api.icndb.com/jokes/random?firstName=John&lastName=Doe')
+            axios.get('http://api.icndb.com/jokes/random')
             .then((response) => {
                 setJdPiada(response.data);
-                const jdPiadaForm = jdPiada.value.joke;
-                const resultado = jdPiadaForm.replace("John Doe", "Maria");
+                const Test = jdPiada.value.joke;
+                setPiada(Test);
 
-                console.log(resultado);
+                console.log(jdPiada.value.joke);
             
-                
             });
         }, []);
     }
@@ -43,24 +43,24 @@ const CriandoPiada = () => {
     return (
         <div>
 
-            <div className="criandoPiada">
-                <div>
+            <form className="criandoPiada" >
+                
                     <div className= "criandoPiada_Text">
-                        <p>Uma Piada ChuckNorris aproved com SEU nome!!</p>
+                        <label>Uma Piada ChuckNorris aproved com SEU nome!!</label>
                     </div>
                     <div className= "criandoPiada_Text">  
-                        <p>Seu Nome:</p>
-                        <input id="firstName" name="nome" type="text" onChange={onChange}></input>
+                        <label htmlfor="firstName">Seu Nome:</label>
+                        <input id="firstName" name="firstName" type="text" onChange={onChange}></input>
                     </div>
                     <div className= "criandoPiada_Text">
                         {/* <button onClick={Bora} onChange={onChange} type="submit">Enviar</button> */}
-                        <button type="button" onClick={ refreshPage }> <span>Reload</span> </button> 
+                        <button  onClick={ Bora(valor.firstName) }>Enviar</button> 
                     </div>
                     <div>
                         <label> </label>
-                    </div>
+                    
                 </div>
-            </div>
+            </form>
 
         </div>
     )

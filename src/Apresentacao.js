@@ -6,13 +6,9 @@ import seatreve from './Imagens/seatreve.png';
 import KKKK from './Imagens/KKKK.png';
 import './App.css';
 import { Link } from 'react-router-dom';
-import api from'./api';
 
 const Apresentacao = () => {
 
-    const sendJoke = async () => {
-        const response = await api.get()
-    }
 
     const [mostraPiada, setmostraPiada] = useState(false);
     const [mudaGlobo, setmudaGlobo] = useState(false);
@@ -60,8 +56,6 @@ const Apresentacao = () => {
                         <div id="finalPiada">
                             <img src={balao2} className="balao2" />
                         </div>
-
-                        /*<img src={logo} className="App-logo" onClick={this.toggle} alt="logo" />*/
                     )
                 }
 

@@ -1,7 +1,8 @@
 .page {
     background-color: orange;
     padding: 5px;
-    min-height: 1650px;
+    min-height: 2050px;
+    min-width: 1500px;
 }
 
 .aprovedPic {
@@ -30,7 +31,7 @@
 }
 
 .principal .boxPiadasLista {
-    width: 80%;
+    width: 100%;
 }
 
 .principal .boxPiadasLista .desap{
@@ -56,8 +57,8 @@
     position:absolute;
     display: flex;
     margin-top: 0px;
-    margin-left: 40px;
-    height: 90px;
+    margin-left: 210px;
+    height: 110px;
     width: 360px;
     background-color: rgb(14, 104, 44);
     border-radius:8px;

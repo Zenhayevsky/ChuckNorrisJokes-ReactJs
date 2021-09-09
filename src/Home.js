@@ -4,8 +4,6 @@ import header from './Imagens/header.jpg';
 import Card from './Componentes/Cards/Card';
 import CriandoPiada from './Componentes/CriandoPiada/CriandoPiada';
 import axios from 'axios';
-import DefPiada from './DefPiada';
-import selfie from './Imagens/cardfoto.png'
 
 const Home = () => {
 
@@ -13,22 +11,22 @@ const Home = () => {
         window.location.reload(); 
     }
 
+    const inicioPiada = {
+        "type": " ", 
+        "value": [{ "id": 0, "joke": " " }]
+       }
 
-    const [piada, setPiada] = useState(DefPiada);
+
+    const [piada, setPiada] = useState(inicioPiada);
     const piadaFormatada = piada.value;
 
     useEffect(() => {
-        axios.get('http://api.icndb.com/jokes/random/16')
+        axios.get('http://api.icndb.com/jokes/random/30')
         .then((response) => {
             setPiada(response.data);
             // console.log(response.data);
         });
     }, []);
-
-    const card = {
-         "type": "success", 
-         "value": { "id": 268, "joke": "Time waits for no man. Unless that man is John Doe." } 
-        }
 
     return (
         <div className="page">
@@ -65,32 +63,16 @@ const Home = () => {
 
                 ))}
 
-                {/* <Card piada={card} />  */}
             </div>
 
-            <div className="boxcriando">
+            {/* <div className="boxcriando">
      
                 <CriandoPiada /> 
-            </div>
-
-            {/* <div className="aproved"> 
-                <img src={aproved} className='aprovedPic'></img>
             </div> */}
-            
             </main>
             
         </div>
     )
 }
-
-
-// const first = () => {
-
-// return (
-// <div>
-// <h2> Home </h2>
-// </div>
-// )
-// }
 
 export default Home;
