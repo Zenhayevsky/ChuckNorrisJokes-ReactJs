@@ -1,9 +1,8 @@
-import React, { Component, Componet, useState } from 'react';
+import React from 'react';
 import './App.css';
 import Home from './Home';
 import Apresentacao from './Apresentacao';
 import { Switch, Route } from 'react-router-dom';
-import CriandoPiada from './Componentes/CriandoPiada/CriandoPiada';
 
 const App = () => {
 
@@ -14,7 +13,6 @@ const App = () => {
           <Switch>
             <Route path="/Home" component={Home}></Route>
             <Route path="/" component={Apresentacao}></Route>
-            <Route path="/edit" component={CriandoPiada}></Route>
           </Switch>
         </main>
 

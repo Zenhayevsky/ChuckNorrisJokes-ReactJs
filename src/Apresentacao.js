@@ -5,8 +5,8 @@ import balao2 from './Imagens/balao3d2.png';
 import seatreve from './Imagens/seatreve.png';
 import KKKK from './Imagens/KKKK.png';
 import './App.css';
-import api from './Services/api';
 import { Link } from 'react-router-dom';
+import api from'./api';
 
 const Apresentacao = () => {
 

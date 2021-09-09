@@ -1,7 +1,7 @@
 .page {
     background-color: orange;
     padding: 5px;
-    min-height: 700px;
+    min-height: 1650px;
 }
 
 .aprovedPic {
@@ -26,10 +26,15 @@
 .principal div {
     padding: 10px;
     margin: 5px;
+    max-height: 2500px;
 }
 
 .principal .boxPiadasLista {
-    width: 70%;
+    width: 80%;
+}
+
+.principal .boxPiadasLista .desap{
+    display: none;
 }
 
 .principal .boxcriando {
@@ -44,4 +49,43 @@
     justify-content: center;
     margin-left: 50px;
     margin-right: 80px;
+    width: 1200px;
+}
+
+.esconde .reinicarLista {
+    position:absolute;
+    display: flex;
+    margin-top: 0px;
+    margin-left: 40px;
+    height: 90px;
+    width: 360px;
+    background-color: rgb(14, 104, 44);
+    border-radius:8px;
+    border: 3px solid rgb(185, 134, 24);
+    box-shadow: 2px 2px 8px 6px rgba(26, 19, 19, 0.15);
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.principal .esconde .reinicarLista  p {
+    
+    text-align: center;
+    color:white;
+}
+
+.principal .esconde .reinicarLista  button {
+    
+    color: rgb(88, 54, 23);
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(194, 168, 65);
+    border-radius: 10px;
+    padding-top: 10px;
+    text-decoration: none;
+    margin-top: -10px;
+    font-size: 15px;
+    align-items: center;
+    height: 50px;
+    padding: 5px;
 }

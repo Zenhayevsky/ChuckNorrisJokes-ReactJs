@@ -9,6 +9,14 @@ const Card = ({piada}) => {
             <div className="card">
                 <img src={selfie} className="card_image"/>
                 <div className="card_conteudo">
+                    <p className= "card_piada"> {piada.joke} </p>
+                </div>
+            </div>
+            </section>
+            {/* <section className="left"> 
+            <div className="card">
+                <img src={selfie} className="card_image"/>
+                <div className="card_conteudo">
                     <p className= "card_piada"> {piada.value[0].joke} </p>
                 </div>
             </div>
@@ -85,7 +93,7 @@ const Card = ({piada}) => {
                 </div>
             </div>
 
-            </section>
+            </section> */}
         </div>
     )
 }
