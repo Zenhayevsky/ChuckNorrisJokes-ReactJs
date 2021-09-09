@@ -1,5 +1,7 @@
-.head {
+.page {
     background-color: orange;
+    padding: 5px;
+    min-height: 700px;
 }
 
 .aprovedPic {
@@ -13,10 +15,33 @@
 
 .header {
     height: 90px;
-    width: 900px;
+    width: 1190px;
     position: relative;
-    margin-left: 230px;
-    margin-top: 15px;
+    margin-left: 60px;
+    margin-top: 10px;
     margin-bottom: 15px;
     border-radius: 15px;
+}
+
+.principal div {
+    padding: 10px;
+    margin: 5px;
+}
+
+.principal .boxPiadasLista {
+    width: 70%;
+}
+
+.principal .boxcriando {
+    width: 30%;
+}
+
+.principal {
+    position: absolute;
+    padding: 0px;
+    background-color: orange;
+    display:flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 80px;
 }

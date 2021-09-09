@@ -1,0 +1,59 @@
+.left .card {
+    border-radius:8px;
+    border: 3px solid rgb(185, 134, 24);
+    background-color: rgb(241, 232, 214);
+    box-shadow: 2px 2px 8px 6px rgba(26, 19, 19, 0.15);
+    display:flex;
+    padding: 10px;
+    align-items: center;
+    flex-direction: row;
+    width: 350px;
+    height: 60px;
+}
+
+.right .card {
+    border-radius:8px;
+    border: 3px solid rgb(185, 134, 24);
+    background-color: rgb(241, 232, 214);
+    box-shadow: 2px 2px 8px 6px rgba(26, 19, 19, 0.15);
+    display:flex;
+    padding: 10px;
+    align-items: center;
+    flex-direction: row;
+    width: 350px;
+    height: 60px;
+}
+
+.right .card .card_image {
+    width: 80px;
+}
+
+.left .card .card_image {
+    width: 80px;
+}
+
+.right .card .card_conteudo p {
+    padding: 0px;
+    color: rgb(118, 63, 22);
+    font-size: 10px;
+}
+
+.left .card .card_conteudo p{
+    padding: 0px;
+    color: rgb(118, 63, 22);
+    font-size: 10px;
+} 
+
+.left, .right {
+    display: inline-block;
+}
+
+.left {
+    width: 50%;
+    float: left;
+}
+
+.right {
+    width: 50%;
+    float: right;
+}

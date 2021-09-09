@@ -1,4 +1,4 @@
-import React, { Component, Componet, useState } from 'react';
+import React, { useState } from 'react';
 import chuck from './Imagens/pngegg.png';
 import balao1 from './Imagens/balao3d.png';
 import balao2 from './Imagens/balao3d2.png';

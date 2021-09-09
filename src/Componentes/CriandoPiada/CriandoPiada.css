@@ -1,0 +1,21 @@
+.criandoPiada {
+    border-radius:8px;
+    border: 3px solid rgb(185, 134, 24);
+    background-color: rgb(241, 232, 214);
+    box-shadow: 2px 2px 8px 6px rgba(26, 19, 19, 0.15);
+    display:flex;
+    padding: 10px;
+    margin: 20px, 0;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.criandoPiada_Text {
+    text-align: center;
+}
+
+.criandoPiada_Text p{
+    font-size: 15px ;
+    color: rgb(6, 90, 16);
+}
